@@ -1,3 +1,5 @@
+package testpackage;
+
 public class CompareObjects {
 
     /**
