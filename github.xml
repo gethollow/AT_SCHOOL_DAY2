@@ -1,7 +1,0 @@
-<application>
-  <component name="GithubAccounts">
-    <account id="f9739fdc-f50e-471c-a3ac-060864ae656d" name="gethollow">
-      <server useHttp="false" host="github.com" />
-    </account>
-  </component>
-</application>
