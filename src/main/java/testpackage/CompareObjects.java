@@ -32,6 +32,10 @@ public class CompareObjects {
         return object1.hashCode() == object2.hashCode();
     }
 
+
+    // Какой из методов вернет false? Почему?
+    // Напишите свою реализцию сравнения экземпляров класса, который при сравнении вернет true
+
     /**
      * Метод сравнивает один экземпляр класса (в данном случае единстванный способ
      * не обращаться к методу класса Object - .getClass() и получить true,
@@ -44,7 +48,20 @@ public class CompareObjects {
         return object1.equals(object2);
     }
 
+    /**
+     * Метод проверяет объекты на типы переменных с помощью оператора instanceof
+     * @param variableObject1 - первый объект для сравнения
+     * @param variableObject2 -второй лбъект для сравнения
+     * @return int - значение прошли объекты условия или нет
+     */
+    public static int checkObjects(Object variableObject1, Object variableObject2){
+        if ((variableObject1 != null) && (variableObject2 != null)) {
+            if ((variableObject1 instanceof String) && (variableObject2 instanceof String))
+                return 1;
+            else if ((variableObject1 instanceof Integer) && (variableObject2 instanceof Integer))
+                return 2;
+        }
+        return 3;
+    }
 
-    // Какой из методов вернет false? Почему?
-    // Напишите свою реализцию сравнения экземпляров класса, который при сравнении вернет true
 }

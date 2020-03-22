@@ -15,7 +15,9 @@ public class tMap {
     }
     public static void testMap() {
         System.out.println(Map.countElementsInMap("Ерохин","Сергей"));
+        System.out.println(" ");
         System.out.println(Map.deleteValueFromMap(MY_MAP,"two"));
         System.out.println(Map.deleteValueFromMap(MY_MAP,"three"));
+        System.out.println(" ");
     }
 }
